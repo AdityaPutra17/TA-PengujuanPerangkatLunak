@@ -1,0 +1,417 @@
+{
+  "info": {
+    "_postman_id": "f0f294cf-edb4-4f02-a82a-5269bee27c6f",
+    "name": "Test API - Aditya Putra",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "31157367",
+    "_collection_link": "https://grey-resonance-796436.postman.co/workspace/New-Team-Workspace~b252f978-a035-4d57-8f32-2efba1205fd2/collection/31157367-f0f294cf-edb4-4f02-a82a-5269bee27c6f?action=share&source=collection_link&creator=31157367"
+  },
+  "item": [
+    {
+      "name": "Test API PIM",
+      "item": [
+        {
+          "name": "Admin",
+          "item": [
+            {
+              "name": "Employment Status",
+              "item": [
+                {
+                  "name": "Employment Status - Get",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "https://api-sandbox.orangehrm.com/api/employmentStatus"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Employment Status - Add",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"id\": \"4\",\r\n    \"name\": \"Adit\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "https://api-sandbox.orangehrm.com/api/employmentStatus"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Employment Status - Delete",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "DELETE",
+                    "header": [],
+                    "url": "https://api-sandbox.orangehrm.com/api/employmentStatus"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Employment Status - Update",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\" : \"Adit\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "https://api-sandbox.orangehrm.com/api/employmentStatus/1031"
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Gender",
+              "item": [
+                {
+                  "name": "Request Gender Data - Get",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://api-sandbox.orangehrm.com/api/gender"
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "User Roles",
+              "item": [
+                {
+                  "name": "Assignable User Roles - Get",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://api-sandbox.orangehrm.com/api/userRoles/assignable-lists"
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "User Regions",
+              "item": [
+                {
+                  "name": "All User Regions - Get",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://api-sandbox.orangehrm.com/api/user-regions"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "User Regions - Get",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://api-sandbox.orangehrm.com/api/systemUsers/10/regions"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "User Regions - Update",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                      }
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"allRegions\": true\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "https://api-sandbox.orangehrm.com/api/systemUsers/1/regions"
+                  },
+                  "response": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OAuth",
+          "item": [
+            {
+              "name": "SSO OAuth Providers - Get",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://api-sandbox.orangehrm.com/api/ssoOAuthProviders"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Performance",
+          "item": [
+            {
+              "name": "- Goal Attachment - Get",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://api-sandbox.orangehrm.com/api/goal/299/attachment/299"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Attendance",
+          "item": [
+            {
+              "name": "Attendance Configuration - Get",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://api-sandbox.orangehrm.com/api/attendance/config"
+              },
+              "response": []
+            },
+            {
+              "name": "Attendance Configuration - Update",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n   \"employeeCanChangeCurrentPunchTime\": true,\r\n   \"employeeCanEditDeleteOwnRecords\": false,\r\n   \"supervisorHodCanAddEditDeleteEmployeeRecords\": false,\r\n   \"ipBasedRestrictionEnabled\": true,\r\n   \"payPoliciesEnabled\": true,\r\n   \"autoPunchOutMissingPunchOutRecordsAtShiftEnd\": true,\r\n   \"autoPunchOutMissingPunchOutRecordsAtDayEnd\": false,\r\n   \"allowedIpRanges\": [\r\n       {\r\n           \"ipFrom\": \"192.168.8.1\",\r\n           \"ipTo\": \"192.168.8.2\"\r\n       },\r\n       {\r\n           \"ipFrom\": \"192.168.8.3\",\r\n           \"ipTo\": \"192.168.8.4\"\r\n       }\r\n   ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api-sandbox.orangehrm.com/api/attendance/config"
+              },
+              "response": [
+                {
+                  "name": "Positive but Failed",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n   \"employeeCanChangeCurrentPunchTime\": true,\r\n   \"employeeCanEditDeleteOwnRecords\": false,\r\n   \"supervisorHodCanAddEditDeleteEmployeeRecords\": false,\r\n   \"ipBasedRestrictionEnabled\": true,\r\n   \"payPoliciesEnabled\": true,\r\n   \"autoPunchOutMissingPunchOutRecordsAtShiftEnd\": true,\r\n   \"autoPunchOutMissingPunchOutRecordsAtDayEnd\": false,\r\n   \"allowedIpRanges\": [\r\n       {\r\n           \"ipFrom\": \"192.168.8.1\",\r\n           \"ipTo\": \"192.168.8.2\"\r\n       },\r\n       {\r\n           \"ipFrom\": \"192.168.8.3\",\r\n           \"ipTo\": \"192.168.8.4\"\r\n       }\r\n   ]\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "https://api-sandbox.orangehrm.com/api/attendance/config"
+                  },
+                  "status": "Unauthorized",
+                  "code": 401,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 07 Jul 2024 09:46:35 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "125"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "Thu, 19 Nov 1981 08:52:00 GMT"
+                    },
+                    {
+                      "key": "Cache-Control",
+                      "value": "max-age=0, private, no-store, no-cache, must-revalidate"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "WWW-Authenticate",
+                      "value": "Bearer realm=\"Service\", scope=\"private\", error=\"insufficient_scope\", error_description=\"The request requires higher privileges than provided by the access token\""
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"error\": \"insufficient_scope\",\n    \"error_description\": \"The request requires higher privileges than provided by the access token\"\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ethnicity",
+          "item": [
+            {
+              "name": "EEO Ethnicities - Get",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "84e209ff42491a8a60ee6908f087576ecc750267"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://api-sandbox.orangehrm.com/api/eeoEthnicity"
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Access Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "client_id",
+              "value": "api-client",
+              "type": "text"
+            },
+            {
+              "key": "grant_type",
+              "value": "client_credentials",
+              "type": "text"
+            },
+            {
+              "key": "client_secret",
+              "value": "942d36a36d6bf422a36f5871f905b6e5",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "https://api-sandbox.orangehrm.com/oauth/issueToken"
+      },
+      "response": []
+    }
+  ]
+}
